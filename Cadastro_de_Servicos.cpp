@@ -1,8 +1,8 @@
-// 6 - Fazer um programa que cadastre o número de dez portas de redes 
-//(não permite entrada de portas repetidas) e o seu respectivo serviço 
-//em dois vetores distintos. Depois permita ao usuário digitar o número 
-//da porta, verifica se o número existe ou não. Caso exista emita na tela 
-//o serviço disponibilizado pela porta. Comentar o código de acordo com 
+// 6 - Fazer um programa que cadastre o nÃºmero de dez portas de redes 
+//(nÃ£o permite entrada de portas repetidas) e o seu respectivo serviÃ§o 
+//em dois vetores distintos. Depois permita ao usuÃ¡rio digitar o nÃºmero 
+//da porta, verifica se o nÃºmero existe ou nÃ£o. Caso exista emita na tela 
+//o serviÃ§o disponibilizado pela porta. Comentar o cÃ³digo de acordo com 
 //as regras de algoritmo estudadas em sala de aula.
 
 #include <stdio.h>
@@ -12,8 +12,7 @@
 #include <string>
 
 int main()
-{
-	
+{	
 	int porta[10];
 	
 	for ( int i = 0; i<=9; i++)
@@ -24,8 +23,7 @@ int main()
 	std::string serv[10];
 	int cadastrando = 0;
 	int cadastro = 0;
-	int i = 0;
-	
+	int i = 0;	
 	int valor = 0;
 	char nome[50];
 	
@@ -86,6 +84,7 @@ int main()
 									{
 										printf("\n Servico: %s Porta: %d ", serv[j].c_str(), porta[j]);
 									}
+									
 									printf("\n");
 									system("pause");
 									cont = 0;
@@ -118,9 +117,9 @@ int main()
 			if(valida == 0)
 			{
 				cadastrando = 1;
-			}
-	
+			}	
 	}
+	
 		printf("###################################################################");
 		printf("\n##");  printf(" Os servicos e portas cadastrados sao: ");
 		
@@ -128,6 +127,5 @@ int main()
 		{
 			printf("\n Servico: %s Porta: %d ", serv[i].c_str(), porta[i]);
 		}
-
 }
 
