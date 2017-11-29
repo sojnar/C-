@@ -30,36 +30,7 @@ int main()
 	char nome[50];
 	
 	while(cadastrando == 0)
-	{
-		int consulta = 0;
-		
-		while(consulta == 0)
-		{
-			system("cls");
-			printf("###################################################################");
-			printf("\n##"); printf(" Digite 1 para pesquisar uma porta o 0 para cadastrar mais servicos: ");
-			scanf("%d", &consulta);
-			if(consulta == 1)
-			{
-				int c_port = 0;
-				printf("###################################################################");
-				printf("\n##"); printf(" Digite o numero da porta que deseja consultar: ");
-				scanf("%d", &c_port);				
-				for(i=0; i<=9; i++)
-				{
-					if(c_port == porta[i])
-					{
-						printf("\n##");  printf(" Servico \"%s\" disponibilizado na porta \"%d\".", serv[i].c_str(),porta[i]);
-					} else
-						{
-							consulta = 0;
-							printf("\n##");  printf(" Porta nao tem nenhum servico cadastrado!" );
-							system("pause");
-						}
-				} 
-			}
-		}
-			
+	{			
 			int valida = 0;
 			system("cls");
 			printf(" Digite \"1\" para cadastrar um servico ou digite \"0\" para listar os servicos cadastrados: ");
@@ -93,8 +64,7 @@ int main()
 					if(porta[i] == valor)
 					{
 						while(porta[i] == valor)
-						{
-						
+						{						
 							system("cls");
 							printf("###################################################################");
 							printf("\n##");  printf(" Essa porta ja foi cadastrada: ");
